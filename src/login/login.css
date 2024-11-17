@@ -1,0 +1,263 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent extra scrolling */
+}
+
+/* Container for the login layout */
+.login-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #2bb4a0;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.brand-logo {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.brand-name {
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.welcome-text {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.signup-text {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.signup-text a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+/* Form section styles */
+.form-section {
+  width: 65%;
+  padding: 30px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+}
+
+.login-button {
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.login-title {
+  font-size: 32px;
+  color: #2bb4a0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.log-in {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #0d3b66;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.alternative-text {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.google-login, .facebook-login {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-login {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.facebook-login {
+  background-color: #4267B2;
+  color: white;
+}
+
+.signup-prompt {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signup-prompt a {
+  color: #2bb4a0;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+
+/* Tablet and smaller devices */
+@media (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+  }
+
+  .form-section {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .social-login {
+    flex-direction: column;
+  }
+
+  .google-login, .facebook-login {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .brand-logo {
+    font-size: 50px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .login-form input,
+  .log-in,
+  .social-login {
+    width: 90%;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .sidebar {
+    height: auto;
+    padding: 20px 5px;
+  }
+
+  .brand-logo {
+    font-size: 40px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .login-title {
+    font-size: 20px;
+  }
+
+  .login-form input {
+    width: 95%;
+  }
+
+  .log-in {
+    width: 95%;
+  }
+}

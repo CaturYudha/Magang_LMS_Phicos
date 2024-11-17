@@ -1,0 +1,168 @@
+/* Register.css */
+.register-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #2bb4a0;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center logo and text vertically */
+  align-items: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.brand-logo {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.brand-name {
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center; /* Center text horizontally */
+}
+
+.optional-text {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center; /* Center text horizontally */
+}
+
+.form-section {
+  width: 65%;
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+}
+
+.register-button {
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.signup-title {
+  font-size: 32px;
+  color: #2bb4a0;
+  text-align: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-group input {
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.change-method, .create-account {
+  width: 48%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.change-method {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.create-account {
+  background-color: #0d3b66;
+  color: white;
+}
+
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-text a {
+  color: #2bb4a0;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  .change-method, .create-account {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    font-size: 40px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .signup-title {
+    font-size: 28px;
+  }
+}

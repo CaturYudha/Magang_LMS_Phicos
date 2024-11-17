@@ -1,0 +1,135 @@
+/* Container */
+.homepage-container {
+    font-family: Arial, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow-x: hidden; /* Disable horizontal overflow for the container */
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .header .icons .icon {
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  /* Banner */
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    background: url("https://via.placeholder.com/1280x467") no-repeat center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .banner button {
+    background-color: #ff9000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .banner button:hover {
+    background-color: #e57a00;
+  }
+  
+  /* Classes Section - Make it scrollable */
+  .classes-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scroll */
+    padding-bottom: 20px; /* Space at the bottom */
+  }
+  
+  .class-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+    min-width: 250px; /* Ensure cards are not too small */
+  }
+  
+  .class-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .class-content {
+    padding: 15px;
+  }
+  
+  .class-content p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .price {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .price-buy {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Additional scroll for the whole page if content is long */
+  body {
+    overflow-y: auto; /* Enable vertical scroll for the whole page */
+    min-height: 100vh; /* Ensure the body takes up the full height */
+  }
+  

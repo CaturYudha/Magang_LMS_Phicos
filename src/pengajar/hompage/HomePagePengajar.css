@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.homepage {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 5px 10px;
+  flex: 1;
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 8px;
+  width: 100%;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.profile-icon {
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section h2 {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.course-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.add-card, .course-card, .more-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  min-height: 150px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-card {
+  border: 2px dashed #00acc1;
+  color: #00acc1;
+}
+
+.plus-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.course-card {
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.course-card::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: url('https://via.placeholder.com/150') center center / cover;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+/* Stick the more-card to the right */
+.more-card {
+  font-size: 1.5em;
+  color: #00acc1;
+  align-items: center;
+  justify-content: center;
+  grid-column: -1; /* Positions the element to the last column in the grid */
+}
